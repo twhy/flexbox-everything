@@ -30,7 +30,7 @@
   <script>
     document.querySelectorAll('.item').forEach(function(item) {
       item.addEventListener('click', function(event) {
-        var content = event.target.textContent + ' ' + event.target.dataset.name;
+        var content = event.target.textContent + ' ' + event.target.getAttribute('data-name');
         document.querySelector('.selected').textContent = content;
       });
     });
