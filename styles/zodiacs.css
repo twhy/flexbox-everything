@@ -1,0 +1,68 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: rgba(212, 56, 56, .9);
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+  font-size: 60px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+/*.mouse {
+  font-size: 60px;
+}
+
+.cow {
+  font-size: 95px;
+}
+
+.tiger {
+  font-size: 100px;
+}
+
+.rabbit {
+  font-size: 70px;
+}
+
+.dragon {
+  font-size: 120px;
+}
+
+.snake {
+  font-size: 75px;
+}
+
+.horse {
+  font-size: 110px;
+}
+
+.sheep {
+  font-size: 90px;
+}
+
+.monkey {
+  font-size: 80px;
+}
+
+.rooster {
+  font-size: 70px;
+}
+
+.dog {
+  font-size: 80px;
+}
+
+.pig {
+  font-size: 90px;
+}
+*/
