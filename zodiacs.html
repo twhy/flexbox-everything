@@ -10,20 +10,31 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="item mouse">🐭</div>
-    <div class="item cow">🐮</div>
-    <div class="item tiger">🐯</div>
-    <div class="item rabbit">🐰</div>
-    <div class="item dragon">🐲</div>
-    <div class="item snake">🐍</div>
-    <div class="item horse">🐴</div>
-    <div class="item sheep">🐑</div>
-    <div class="item monkey">🐵</div>
-    <div class="item rooster">🐔</div>
-    <div class="item dog">🐶</div>
-    <div class="item pig">🐷</div>
+  <div class="menu">
+    <div class="item mouse" data-name="鼠">🐭</div>
+    <div class="item cow" data-name="牛">🐮</div>
+    <div class="item tiger" data-name="虎">🐯</div>
+    <div class="item rabbit" data-name="兔">🐰</div>
+    <div class="item dragon" data-name="龙">🐲</div>
+    <div class="item snake" data-name="蛇">🐍</div>
+    <div class="item horse" data-name="马">🐴</div>
+    <div class="item sheep" data-name="羊">🐑</div>
+    <div class="item monkey" data-name="猴">🐵</div>
+    <div class="item rooster" data-name="鸡">🐔</div>
+    <div class="item dog" data-name="狗">🐶</div>
+    <div class="item pig" data-name="猪">🐷</div>
   </div>
+  <main>
+    <div class="selected">?</div>
+  </main>
+  <script>
+    document.querySelectorAll('.item').forEach(function(item) {
+      item.addEventListener('click', function(event) {
+        var content = event.target.textContent + ' ' + event.target.dataset.name;
+        document.querySelector('.selected').textContent = content;
+      });
+    });
+  </script>
 </body>
 
 </html>
