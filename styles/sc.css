@@ -42,13 +42,16 @@ a {
 }
 
 .header .nav > li {
+  display: flex;
   text-align: center;
 }
 
 .header .nav a {
+  width: 100%;
   color: #666;
-  display: block;
-  line-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: color .2s;
 }
 
@@ -173,8 +176,8 @@ a {
     display: none;
   }
 
-  .header .nav a {
-    line-height: 60px;
+  .header .nav > li > a {
+    height: 60px;
   }
 
   .header .nav-toggle {
