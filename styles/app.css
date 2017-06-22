@@ -2,18 +2,19 @@
   box-sizing: border-box;
 }
 
-.fa {
-  color: #666;
-}
-
-a {
-  color: #0070c9;
-  text-decoration: none;
+body {
+  font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 body, h1, ul, li {
   margin: 0;
   padding: 0;
+}
+
+
+a {
+  color: #0070c9;
+  text-decoration: none;
 }
 
 ul {
@@ -32,8 +33,9 @@ html, body {
 }
 
 .header, .footer {
+  color: #fff;
   height: 50px;
-  background: #f8f8f8;
+  background: rgba(0, 0, 0, .8);
 }
 
 .header {
@@ -54,12 +56,10 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
 }
 
 h1 {
-  color: #444;
+  color: #fff;
   font-size: 20px;
   font-weight: 400;
 }
@@ -85,13 +85,11 @@ h1 {
   font-size: 12px;
   text-align: center;
   align-items: center;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
 }
 
 .footer .item {
   flex: 1;
-  color: #666;
+  color: #bbb;
   display: flex;
   cursor: pointer;
   align-self: stretch;
@@ -102,11 +100,11 @@ h1 {
 .footer .item .fa {
   font-size: 22px;
   display: block;
-  margin-bottom: 2px;
+  margin: 2px 0 1px;
 }
 
 .footer .item.selected, .footer .item.selected .fa {
-  color: #0070c9;
+  color: #fff;
 }
 
 @media (max-width: 500px) {
@@ -118,11 +116,15 @@ h1 {
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  .footer .item .fa {
+    margin: 2px 0;
+  }
 }
 
 @media (max-width: 320px) {
   .footer .item .fa {
     font-size: 20px;
-    margin-bottom: 1px;
+    margin: 3px 0 1px;
   }
 }
