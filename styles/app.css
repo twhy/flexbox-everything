@@ -111,7 +111,23 @@ h1 {
   color: #fff;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 420px) {
+  .header {
+    padding: 0 15px;
+  }
+
+  .case {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .footer .item .fa {
+    margin: 2px 0;
+  }
+}
+
+@media (max-width: 320px) {
+
   .header {
     padding: 0 10px;
   }
@@ -121,12 +137,6 @@ h1 {
     margin-right: 10px;
   }
 
-  .footer .item .fa {
-    margin: 2px 0;
-  }
-}
-
-@media (max-width: 320px) {
   .footer .item .fa {
     font-size: 20px;
     margin: 3px 0 1px;
