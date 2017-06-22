@@ -1,0 +1,16 @@
+.space {
+  width: 100vw;
+  height: 100vh;  /* 设置宽高以显示居中效果 */
+  display: flex;  /* 弹性布局 */
+  align-items: center;  /* 垂直居中 */
+  justify-content: center;  /* 水平居中 */
+}
+
+body {
+  margin: 0;
+  background: rgba(0, 0, 0, .95);
+}
+
+.earth {
+  font-size: 120px;
+}
