@@ -31,10 +31,6 @@ html, body {
   flex-direction: column;
 }
 
-.app > * {
-  flex: 1 1 auto;
-}
-
 .header, .footer {
   height: 50px;
   background: #f8f8f8;
@@ -69,8 +65,8 @@ h1 {
 }
 
 .main {
+  flex: 1;
   overflow-y: scroll;
-  height: calc(100% - 100px);
   -webkit-overflow-scrolling: touch;
 }
 
