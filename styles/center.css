@@ -11,6 +11,7 @@ body {
   background: rgba(0, 0, 0, .95);
 }
 
-.earth {
-  font-size: 120px;
+.earth::after {
+  content: '🌏';
+  font-size: 85px;
 }
