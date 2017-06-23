@@ -5,8 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="styles/center.css">
   <title>元素居中</title>
+  <style>
+    .space {
+      width: 100vw;
+      height: 100vh;  /* 设置宽高以显示居中效果 */
+      display: flex;  /* 弹性布局 */
+      align-items: center;  /* 垂直居中 */
+      justify-content: center;  /* 水平居中 */
+    }
+
+    body {
+      margin: 0;
+      background: rgba(0, 0, 0, .95);
+    }
+
+    .earth::after {
+      content: '🌏';
+      font-size: 85px;
+    }
+  </style>
 </head>
 
 <body>
